@@ -1,0 +1,102 @@
+/* VARIABLES */
+
+:root {
+    /** Primary Colors **/
+    --soft-red: hsl(7, 99%, 70%);
+    --yellow: hsl(51, 100%, 49%);
+    --dark-desaturated-cyan: hsl(167, 40%, 24%);
+    --dark-blue: hsl(198, 62%, 26%);
+    --dark-moderate-cyan: hsl(168, 34%, 41%);
+    --cyan: hsl(197, 49%, 48%);
+
+    /**Neutral Colors**/
+    --very-dark-desaturated-blue: hsl(212, 27%, 19%);
+    --very-dark-grayish-blue: hsl(213, 9%, 39%);
+    --dark-grayish-blue: hsl(232, 10%, 55%);
+    --grayish-blue: hsl(210, 4%, 67%);
+    --white: hsl(0, 0%, 100%);
+
+    /**Fonts**/
+    --barlow: 'Poppins', sans-serif;
+    --fraunces: 'Fraunces', sans-serif;
+}
+
+/* RESETS */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+img{
+    max-width: 100%;
+}
+
+/* HEADER */
+.header {
+    height: 90vh;
+    background-image: url(../images/mobile/image-header.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+
+.navigation {
+    padding: 30px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.main-title {
+    font-family: var(--fraunces);
+    text-transform: uppercase;
+    color: var(--white);
+    font-weight: 900;
+    margin-top: 50px;
+    padding: 0 20px;
+    text-align: center;
+    letter-spacing: 10px;  
+}
+/* FIRST SECTIONS */
+.primary-section__info {
+    padding: 40px 25px;
+    text-align: center;
+}
+
+.info__title {
+    font-family: var(--fraunces);
+    font-weight: 900;
+    font-size: 30px;
+    color: var(--very-dark-desaturated-blue);
+    margin-bottom: 25px;
+}
+
+.info__text {
+    color: var(--very-dark-grayish-blue);
+    font-family: var(--barlow);
+    line-height: 25px;
+    margin-bottom: 30px;
+}
+
+.learn-more {
+    text-decoration: none;
+    font-family: var(--fraunces);
+    font-weight: 900;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    color: var(--very-dark-desaturated-blue);
+    position: relative;
+    border-bottom: 10px solid var(--yellow);
+    border-radius: 5px;
+    padding: 0 10px;
+}
+
+.lmpink {
+    border-color: var(--soft-red);
+}
+
+/* SECOND SECTIONS */
+ 
