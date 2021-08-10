@@ -59,6 +59,24 @@ p {
   align-items: center;
 }
 
+.nav-menu-desktop {
+    display: none;
+}
+
+.nav-item {
+    text-decoration: none;
+    color: #fff;
+    font-family: var(--barlow);
+    font-weight: 700;
+    font-size: 18px;
+    padding: 10px 20px;
+    border-radius: 20px;
+}
+
+.nav-item:hover {
+    background-color: rgba(255, 255, 255, 0.4);
+}
+
 .main-title {
   font-family: var(--fraunces);
   text-transform: uppercase;
