@@ -37,13 +37,23 @@
             <a href="#" class="nav-item main-nav-link">Contact</a>
           </div>
           <img src="images/icon-hamburger.svg" alt="" class="menu-toggle" />
+
+          <div class="nav-menu-mobile">
+            <a href="#" class="nav-item">About</a>
+            <a href="#" class="nav-item">Services</a>
+            <a href="#" class="nav-item">Projects</a>
+            <a href="#" class="nav-item main-nav-link">Contact</a>
+          </div>
         </nav>
         <h1 class="main-title">We are creatives</h1>
       </header>
 
       <!-- FIRST SECTIONS -->
       <section class="primary-section">
-        <img src="images/mobile/image-transform.jpg" alt="" class="transform" />
+        <picture  class="transform">
+          <source media="(min-width: 768px)" srcset="images/desktop/image-transform.jpg">
+          <img src="images/mobile/image-transform.jpg" alt="" />
+        </picture>
         <div class="primary-section__info t-text">
           <h3 class="info__title">Transform your brand</h3>
           <p class="info__text">
@@ -56,7 +66,10 @@
       </section>
 
       <section class="primary-section">
-        <img src="images/mobile/image-stand-out.jpg" alt="" class="stand-out" />
+        <picture  class="stand-out">
+          <source media="(min-width: 768px)" srcset="./images/desktop/image-stand-out.jpg">
+          <img src="images/mobile/image-stand-out.jpg" alt=""/>
+        </picture>
         <div class="primary-section__info so-text">
           <h3 class="info__title">Stand out to the right audience</h3>
           <p class="info__text">
@@ -129,16 +142,28 @@
       <!-- GALLERY SECTION -->
       <section class="gallery">
         <div class="gallery-grid">
-          <img
-            src="images/mobile/image-gallery-milkbottles.jpg"
-            alt="Milk Bottles" class="grid-mobile"
-          />
-          <img src="images/mobile/image-gallery-orange.jpg" alt="Oragen" class="grid-mobile" />
-          <img src="images/mobile/image-gallery-cone.jpg" alt="Cone" class="grid-mobile" />
-          <img
-            src="images/mobile/image-gallery-sugar-cubes.jpg"
-            alt="Sugar Cubes" class="grid-mobile"
-          />
+          <picture>
+            <source media="(min-width: 768px)" srcset="./images/desktop/image-gallery-milkbottles.jpg">
+            <img
+              src="images/mobile/image-gallery-milkbottles.jpg"
+              alt="Milk Bottles" class="grid-mobile"
+            />
+          </picture>
+          <picture>
+            <source media="(min-width: 768px)" srcset="./images/desktop/image-gallery-orange.jpg">
+            <img src="images/mobile/image-gallery-orange.jpg" alt="Oragen" class="grid-mobile" />
+          </picture>
+          <picture>
+            <source media="(min-width: 768px)" srcset="./images/desktop/image-gallery-cone.jpg">
+            <img src="images/mobile/image-gallery-cone.jpg" alt="Cone" class="grid-mobile" />
+          </picture>
+          <picture>
+            <source media="(min-width: 768px)" srcset="./images/desktop/image-gallery-sugarcubes.jpg">
+            <img
+              src="images/mobile/image-gallery-sugar-cubes.jpg"
+              alt="Sugar Cubes" class="grid-mobile"
+            />
+          </picture>
 
           
         </div>
@@ -179,5 +204,7 @@
         </div>
       </footer>
     </div>
+
+    <script src="js/main.js"></script>
   </body>
 </html>

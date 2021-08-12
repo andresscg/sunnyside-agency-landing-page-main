@@ -50,6 +50,7 @@ p {
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
+  position: relative;
 }
 
 .navigation {
@@ -75,6 +76,27 @@ p {
 
 .nav-item:hover {
     background-color: rgba(255, 255, 255, 0.4);
+}
+
+.nav-menu-mobile {
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 10px 0;
+  background-color: var(--white);
+  width: 90%;
+  top: 80px;
+  left: 400px;
+  transition: .3s ease-in-out;
+}
+
+.active {
+  left: 20px;
+}
+
+.nav-menu-mobile a {
+  color: var(--very-dark-grayish-blue);
 }
 
 .main-title {
@@ -250,6 +272,7 @@ p {
 .footer__social-icons img{
     margin-right: 20px;
     margin-bottom: 30px;
+    cursor: pointer;
 }
 
 .attribution {
